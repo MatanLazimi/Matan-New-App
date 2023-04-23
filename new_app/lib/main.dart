@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'other/strings.dart';
-import 'view/top_brokers_screen.dart';
+import 'view/home_screen/top_brokers_screen.dart';
 
-void main() {
+Future<void> main() async {
+  // load env file
+  await dotenv.load(fileName: StringsAndConsts.ENV_FILE_NAME);
+
+  // ensure initialized
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const ProviderScope(child: MyApp()));
 }
 

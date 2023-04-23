@@ -10,7 +10,7 @@ class BrokerManageModel with _$BrokerManageModel {
   const factory BrokerManageModel({
     int? o,
     String? bn,
-    int? md,
+    double? md,
     String? mdcmnt,
     bool? da,
     String? in_,

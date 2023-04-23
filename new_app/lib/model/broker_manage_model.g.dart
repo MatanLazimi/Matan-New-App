@@ -10,7 +10,7 @@ _$_BrokerManageModel _$$_BrokerManageModelFromJson(Map<String, dynamic> json) =>
     _$_BrokerManageModel(
       o: json['o'] as int?,
       bn: json['bn'] as String?,
-      md: json['md'] as int?,
+      md: (json['md'] as num?)?.toDouble(),
       mdcmnt: json['mdcmnt'] as String?,
       da: json['da'] as bool?,
       in_: json['in_'] as String?,

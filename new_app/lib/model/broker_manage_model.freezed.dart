@@ -22,7 +22,7 @@ BrokerManageModel _$BrokerManageModelFromJson(Map<String, dynamic> json) {
 mixin _$BrokerManageModel {
   int? get o => throw _privateConstructorUsedError;
   String? get bn => throw _privateConstructorUsedError;
-  int? get md => throw _privateConstructorUsedError;
+  double? get md => throw _privateConstructorUsedError;
   String? get mdcmnt => throw _privateConstructorUsedError;
   bool? get da => throw _privateConstructorUsedError;
   String? get in_ => throw _privateConstructorUsedError;
@@ -106,7 +106,7 @@ abstract class $BrokerManageModelCopyWith<$Res> {
   $Res call(
       {int? o,
       String? bn,
-      int? md,
+      double? md,
       String? mdcmnt,
       bool? da,
       String? in_,
@@ -272,7 +272,7 @@ class _$BrokerManageModelCopyWithImpl<$Res, $Val extends BrokerManageModel>
       md: freezed == md
           ? _value.md
           : md // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
       mdcmnt: freezed == mdcmnt
           ? _value.mdcmnt
           : mdcmnt // ignore: cast_nullable_to_non_nullable
@@ -556,7 +556,7 @@ abstract class _$$_BrokerManageModelCopyWith<$Res>
   $Res call(
       {int? o,
       String? bn,
-      int? md,
+      double? md,
       String? mdcmnt,
       bool? da,
       String? in_,
@@ -720,7 +720,7 @@ class __$$_BrokerManageModelCopyWithImpl<$Res>
       md: freezed == md
           ? _value.md
           : md // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
       mdcmnt: freezed == mdcmnt
           ? _value.mdcmnt
           : mdcmnt // ignore: cast_nullable_to_non_nullable
@@ -1077,7 +1077,7 @@ class _$_BrokerManageModel extends _BrokerManageModel {
   @override
   final String? bn;
   @override
-  final int? md;
+  final double? md;
   @override
   final String? mdcmnt;
   @override
@@ -1401,7 +1401,7 @@ abstract class _BrokerManageModel extends BrokerManageModel {
   const factory _BrokerManageModel(
       {final int? o,
       final String? bn,
-      final int? md,
+      final double? md,
       final String? mdcmnt,
       final bool? da,
       final String? in_,
@@ -1479,7 +1479,7 @@ abstract class _BrokerManageModel extends BrokerManageModel {
   @override
   String? get bn;
   @override
-  int? get md;
+  double? get md;
   @override
   String? get mdcmnt;
   @override
