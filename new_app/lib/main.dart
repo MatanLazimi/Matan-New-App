@@ -41,7 +41,7 @@ class _MyAppState extends ConsumerState<MyApp> {
       routeInformationProvider: router.routeInformationProvider,
       title: StringsAndConsts.MAIN_BUNDLE,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
     );
   }

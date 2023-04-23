@@ -28,9 +28,12 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
     final brokersList = ref.watch(brokersListProvider);
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+        leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(color: Colors.white, Icons.menu)),
         backgroundColor: StringsAndConsts.APPBAR_COLOR,
-        title: const Text(StringsAndConsts.HOME_TITLE),
+        title: const Text(StringsAndConsts.HOME_TITLE,
+            style: TextStyle(color: Colors.white)),
       ),
       body: brokersList.when(
         error: (error, stackTrace) => Text(StringsAndConsts.ERROR_TO_LOAD_DATA),
