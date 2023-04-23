@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../controller/data_provider.dart';
+import '../../other/routes_enum.dart';
 import '../../other/strings.dart';
 import 'widgets/broker_element_widget.dart';
 
@@ -39,7 +41,11 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             itemCount: data?.length ?? 0,
             itemBuilder: (context, index) {
               return BrokerElementWidget(
-                  currentbroker: data![index], onPressed: () {});
+                  currentbroker: data![index],
+                  onPressed: () {
+                    context.goNamed(RoutesNames.BrokerDetailsScreen.name,
+                        extra: data[index]);
+                  });
             },
           );
         },
