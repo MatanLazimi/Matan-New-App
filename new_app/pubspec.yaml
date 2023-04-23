@@ -12,6 +12,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_dotenv: ^5.0.2
   freezed_annotation: ^2.2.0
+  json_annotation: ^4.7.0
 
 # use this command for Freezed: flutter pub run build_runner build
 # flutter packages pub run build_runner build --delete-conflicting-outputs
