@@ -11,11 +11,17 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   flutter_dotenv: ^5.0.2
+  freezed_annotation: ^2.2.0
 
+# use this command for Freezed: flutter pub run build_runner build
+# flutter packages pub run build_runner build --delete-conflicting-outputs
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  freezed: ^2.2.0
+  build_runner: ^2.3.3
+  json_serializable: ^6.5.4
 
 flutter:
   uses-material-design: true
